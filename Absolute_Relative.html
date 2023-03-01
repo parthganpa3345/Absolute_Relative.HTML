@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .foreground {
+            height: 300px;
+            width: 300px;
+            background: lightcoral;
+            color: red;
+            margin: 50px;
+            font-size: 30px;
+            position: relative;
+        }
+        
+        .foreground span {
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+        
+        .background {
+            height: 300px;
+            width: 300px;
+            background: url(https://i.guim.co.uk/img/media/a669355aa9b963c4fea9adbfcce53f168e633c74/0_246_4275_2564/master/4275.jpg?width=1900&quality=85&dpr=1&s=none);
+            background-size: 100% 100%;
+            color: blue;
+            font-size: 30px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- absolute==> always for CHILD
+    relative==> always for PARENT -->
+
+    <div class="foreground">
+        <span>Parth</span>
+        <img src="https://cdn.vox-cdn.com/thumbor/kd6rfhoDKS3R1g5cYP6qziwiZN0=/0x0:3970x3013/920x613/filters:focal(1668x1190:2302x1824):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/71974203/1266461085.0.jpg" height="100%" width="100%">
+    </div>
+
+    <div class="background">Parth</div>
+
+</body>
+
+</html>
